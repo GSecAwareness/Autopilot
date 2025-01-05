@@ -11,9 +11,23 @@
 
 1. Go to Azure Administration -> Manage -> Groups -> New Groups
 
-2. Create a Security Group and name it "WIndows 11 Autopilot." The membership type shoudld be set as "Synamic Device"
+2. Create a Security Group and name it "WIndows 11 Autopilot." The membership type shoudld be set as "Dynamic Device"
 
 ![getcontent](https://github.com/GSecAwareness/Autopilot/blob/main/Dynamic%20Device.PNG)
+
+Every device in this group will be eligible for Autopilot.
+
+3. Under device membership rules, add the following rules:
+
+DeviceOSType = Windows
+
+Device OSVersion Starts with 10.0.2 (this is the code for Windows 11)
+
+![getcontent](https://github.com/GSecAwareness/Autopilot/blob/main/Configure%20Rules.PNG)
+
+
+
+
 
 
   
