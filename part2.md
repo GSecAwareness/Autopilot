@@ -23,18 +23,3 @@ NIST (SP) 800-53 Rev. 5 is a security and privacy framework developed by the Nat
 | **SC-28**      | Protection of Data at Rest (Configuration) | Require files to save to OneDrive folders by default |
 | **SC-28(1)**   | Protection of Data at Rest (Configuration) | Prevent password storage in Edge                |
 
-## **Edge Configuration**
-- **Disable password saving**:  
-  - Device Configuration → Create New → Settings → Edge → Password Manager and Protection  
-  - **Toggle off**: Enable saving passwords to the password manager  
-- **Delete stored passwords automatically**:  
-  - (Within the same policy): Microsoft Edge → Clear Browser Data when Edge closes  
-
-## **Firewall Configuration**
-- **Enable firewall for all profiles**:  
-  - Public, Private, Domain  
-
-## **Password Reset**
-- **Enable self-service password reset**:  
-  - Password Reset → Properties → Self-service password reset  
-
