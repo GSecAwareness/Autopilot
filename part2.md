@@ -1,6 +1,6 @@
 # Autopilot Template - NIST 800-53 Compliance
 
-NIST 800-53 is a framework for security and privacy controls for federal information systems and organizations. It provides guidelines to help manage risk and comply with regulations.
+NIST (SP) 800-53 Rev. 5 is a security and privacy framework developed by the National Institute of Standards and Technology (NIST) to protect federal information systems and organizations from security threats. It provides a structured set of controls to ensure compliance with US federal laws like Federal Information Security Modernization Act (FISMA). FISMA mandates that federal agencies and contractors implement strict security measures to protect sensitive government data from unauthorized access or mishandling. While primarily designed for government use, many businesses adopt NIST 800-53 to enhance their cybersecurity posture. I created this template to ensure that our company establishes a strong security baseline for each tenant with proper security configurations in Microsoft 365 adminsitration. 
 
 ## Security Template in accordance with NIST 800-53
 
