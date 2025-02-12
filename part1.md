@@ -4,7 +4,9 @@
 
 ### Windows Autopilot is a cloud-based deployment service designed to simplify and automate device setup and configuration. By uploading a device's hardware hash into the Autopilot enrollment section, you can enable zero-touch deployment for new devices (directly from the manufacturer) or reset and reconfigure existing managed devices efficiently.
 ### Autopilot can be set up to ensure managed devices, such as laptops, automatically apply security policies, device configurations, and compliance requirements.
-### I think of Autopilot as a recipe for setting up a Windows device. Instead of manually adding each ingredient (software, policies, settings), Autopilot applies the recipe automatically as soon as the device starts up. 
+### Autopilot is like a meal prep service for Windows devices. Instead of cooking from scratch (manually installing software and configuring settings), Autopilot takes a pre-set recipe and applies the neccessary ingredients (apps, policies, and settings) as soon as the device starts up--delivering a ready-to-use system without the need for re-imaging. 
+### When I first started learning Autopilot, I struggled to find a template that clearly defined how policies should be created and what they meant. At the same time, I was studying for my Security+ certification and came across various NIST frameworks, particularly NIST SP 800-53 Rev. 5. This framework outlines security and privacy controls for federal systems and organizations. Inspired by its structured approach, I created an Autopilot template aligned with NIST 800-53. This template was implemented across multiple tenants in our business, establishing a strong security baseline for all our clients.
+
 
 ---
 #### Create a Group
