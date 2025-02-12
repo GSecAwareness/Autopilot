@@ -70,12 +70,14 @@ Create and Save
 
 ![getcontent](https://github.com/GSecAwareness/Autopilot/blob/main/RAND.PNG)
 ---
-*On the next screen, add the group that we created earlier.*
+*On the next screen, add the group that we created earlier. Click Next and Review and Create!*
 
 ![getcontent](https://github.com/GSecAwareness/Autopilot/blob/main/Group.PNG)
 ---
 
-to be continued...
+***Step 8***
+
+*Under Enrollment --> Deployment Profiles --> 
 
 
 
