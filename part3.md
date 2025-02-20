@@ -4,16 +4,24 @@ Now that we have our template in place, it's time to set up the configurations t
 
 
 ### **AC-2 Account Management**
-- **Disable password saving**:  
-  - Device Configuration → Create New → Settings → Edge → Password Manager and Protection  
-  - **Toggle off**: Enable saving passwords to the password manager  
-- **Delete stored passwords automatically**:  
-  - (Within the same policy): Microsoft Edge → Clear Browser Data when Edge closes  
+- ****Require Entra ID joined device OR MFA for all users. This protects access to company resources by requiring users to use a managed device or perform MFA.****   
 
-## **Firewall Configuration**
-- **Enable firewall for all profiles**:  
-  - Public, Private, Domain  
+Devices > Conditional Access > New Policy > Name, Users (All), Resources (All), Grant (Require MFA, Require Entra hybrid joined device), For Multiple Controls (Require one of the selected controls)
 
-## **Password Reset**
-- **Enable self-service password reset**:  
-  - Password Reset → Properties → Self-service password reset  
+### **AC-2(5) Access Enforcement**  
+
+- ****Disable Built-in Admin Accounts. I could not find an easy to do this. You can enable LAPS, but I strictly wanted the built-in admin account disabled. The easiest way to do this in Intune was to create a PowerShell script and enforce it on all devices. Be mindful that the script will be run only once, unless it is scheduled.****
+   
+    ****Create a PowerShell Script in Administrator: Windows PowerShell ISE****  
+          *Get-Localuser –Name “Administrator” | Disable-Localuser*
+    ****Save DisableLocalAdmin.ps1 in Documents****  
+
+Devices > Scripts and Remediation > Platform Scripts > Add > Add DisableLocalAdmin.ps1 
+
+### **AC-3 Least Privilege**  
+
+- ****Location-based access (US only)****
+
+Devices > Conditional Access > Manage > Named Locations > Add Countries Location > Name (United States only), Select “United States” > Create 
+Devices > Conditional Access > New Policy > Name, Users (All), Resources (All), Network (Include selected Networks and locations > Select > United States only) 
+
