@@ -139,7 +139,7 @@ The section after that is Supersedence. This replaces an old app with a newer ve
 
 Under Assignments, choose your User or Group and click Next to continue. It may take a moment to create the app because Intune has to upload the intunewin file. 
 
-***Step 13 - Create a Line of Business (LOB) App for Screen Connect***
+Once the apps are deployed, we need to concentrate on creating the Intune policies, which will align with NIST (SP) 800-53, to our Autopilot group. We will continue this in the next section.
 
  
 
